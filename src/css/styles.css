@@ -1,0 +1,182 @@
+/* ----------------------------------------------------------------------------
+   Changement du calcul de la hauteur et la largeur totale d'un élément
+---------------------------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* ----------------------------------------------------------------------------
+   Variables
+---------------------------------------------------------------------------- */
+:root {
+  /* Couleurs Principales */
+  --content-primary: #edf2ef;
+  --content-secondary: #f9fffb;
+  --content-tertiary: #e5e8e4;
+  --content-transparence: rgba(237, 242, 239, 0.3);
+
+  /* Couleurs Neutres */
+  --neutal-primary: #24272b;
+  --neutal-secondary: #515356;
+  --neutal-tertiary: #151515;
+
+  /* Couleurs Actions */
+  --action-primary: #f2e3bd;
+  --action-secondary: #f3ecd8;
+  --action-tertiary: #e3cf9d;
+
+  /* Couleurs Complémentaires */
+  --complementary-primary: #f49097;
+  --complementary-secondary: #a288e3;
+  --complementary-tertiary: linear-gradient(225deg, #fcabb1 0%, #eff2c0 100%);
+}
+
+/* ----------------------------------------------------------------------------
+   Éléments (balises)
+---------------------------------------------------------------------------- */
+body {
+  background-color: var(--neutal-primary);
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 0 50px;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--content-primary);
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5.625rem;
+  line-height: 109.97%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 0.5;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 3.75rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 135%;
+}
+
+a {
+  color: var(--content-primary);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*----------------------------------------------------------------------------
+    Objets (Structure, classes)
+----------------------------------------------------------------------------*/
+.wrapper {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper_nav {
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------------------------------------------------------------------------
+    Composants
+----------------------------------------------------------------------------*/
+
+/*------------------------------------------------------ Header ------------------------------------------------------*/
+header {
+  padding: 20px 0;
+}
+
+.header__style {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.brand {
+  height: 50px;
+}
+
+.nav_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_main li + li {
+  margin-left: 50px;
+}
+
+/*------------------------------------------------------ Footer ------------------------------------------------------*/
+.footer__style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .socials li + li {
+  padding-left: 20px;
+}
+
+footer .social_icon {
+  width: auto;
+  height: 25px;
+}
+
+/*----------------------------------------------------- Boutons ----------------------------------------------------*/
+.button {
+  display: inline-block;
+  padding: 10px 130px;
+  border: 1px solid var(--content-primary);
+}
+
+/*----------------------------------------------- Lignes de séparation ---------------------------------------------*/
+.line {
+  display: inline-block;
+  border-top: 0.044rem solid var(--content-primary);
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+/*--------------------------------------------- Section Contenu Accueil -------------------------------------------*/
+.content_index h1 {
+  position: relative;
+}
+.signature {
+  position: absolute;
+  top: -130%;
+  right: 60%;
+}
