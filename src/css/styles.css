@@ -43,7 +43,6 @@ html {
 body {
   background-color: var(--neutal-primary);
   font-family: "Barlow Condensed", sans-serif;
-  padding: 0 50px;
 }
 
 h1,
@@ -161,6 +160,11 @@ footer .socials li + li {
 footer .social_icon {
   width: auto;
   height: 25px;
+}
+
+/*---------------------------------------------------- Conteneur ---------------------------------------------------*/
+.site-container {
+  padding: 0 50px;
 }
 
 /*----------------------------------------------------- Boutons ----------------------------------------------------*/
@@ -347,6 +351,13 @@ footer .line {
 .softwares img {
   height: 40px;
   width: auto;
+}
+
+/*--- Section Médias ---*/
+.about_medias img {
+  width: 100%;
+  height: 960px;
+  object-fit: cover;
 }
 
 /*--------------------------------------------- Section Contenu Contact --------------------------------------------*/
