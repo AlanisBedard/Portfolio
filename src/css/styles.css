@@ -110,7 +110,7 @@ ul {
 
 /*------------------------------------------------------ Header ------------------------------------------------------*/
 header {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .header__style {
@@ -134,6 +134,10 @@ header {
 }
 
 /*------------------------------------------------------ Footer ------------------------------------------------------*/
+footer {
+  padding: 0 0 20px 0;
+}
+
 .footer__style {
   display: flex;
   flex-direction: column;
@@ -159,7 +163,7 @@ footer .social_icon {
 /*----------------------------------------------------- Boutons ----------------------------------------------------*/
 .button {
   display: inline-block;
-  padding: 10px 130px;
+  padding: 10px 120px;
   border: 1px solid var(--content-primary);
 }
 
@@ -172,11 +176,81 @@ footer .social_icon {
 }
 
 /*--------------------------------------------- Section Contenu Accueil -------------------------------------------*/
+.hero {
+  padding: 40px 0 70px 0;
+}
+
+.content_index {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+
+  position: relative;
+}
+
+.index_infos {
+  align-self: flex-end;
+}
+
+.index_infos .titles {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+.index_infos .button {
+  margin: 0 0 30% 10%;
+  white-space: nowrap;
+}
+
+.content_index .video {
+  width: 75%;
+  height: 100%;
+}
+
+.content_index .video_container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+}
+
+.content_index .video iframe {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -2;
+  margin-top: -20px;
+}
+
+.video_hide1 {
+  display: inline-block;
+  position: absolute;
+  top: -33%;
+  left: auto;
+  width: 120%;
+  height: 30%;
+  background-color: var(--neutal-primary);
+  z-index: -1;
+}
+
+.video_hide2 {
+  display: inline-block;
+  position: absolute;
+  bottom: -12.3%;
+  left: auto;
+  width: 120%;
+  height: 15%;
+  background-color: var(--neutal-primary);
+  z-index: -1;
+}
+
 .content_index h1 {
   position: relative;
 }
+
 .signature {
   position: absolute;
-  top: -130%;
-  right: 60%;
+  top: -120%;
+  right: 7%;
 }
