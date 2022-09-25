@@ -49,6 +49,7 @@ body {
 h1,
 h2,
 h3,
+label,
 p {
   color: var(--content-primary);
   margin: 0;
@@ -72,7 +73,8 @@ h3 {
   font-size: 3.75rem;
 }
 
-p {
+p,
+label {
   font-weight: 400;
   font-size: 1rem;
   line-height: 135%;
@@ -163,8 +165,21 @@ footer .social_icon {
 /*----------------------------------------------------- Boutons ----------------------------------------------------*/
 .button {
   display: inline-block;
-  padding: 10px 120px;
+  padding: 10px 0;
+  width: 325px;
+  text-align: center;
   border: 1px solid var(--content-primary);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons .button + .button {
+  margin-top: 10px;
 }
 
 /*----------------------------------------------- Lignes de séparation ---------------------------------------------*/
@@ -253,4 +268,73 @@ footer .social_icon {
   position: absolute;
   top: -120%;
   right: 7%;
+}
+
+/*---------------------------------------------- Section Contenu Contact ---------------------------------------------*/
+.contact__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact_infos {
+  padding-right: 70px;
+}
+
+.contact_infos p:first-of-type {
+  padding: 20px 0 40px 0;
+}
+
+.contact_infos p:last-of-type {
+  margin-top: 5px;
+}
+
+.references {
+  padding: 0 0 70px 0;
+}
+
+/*--- Formulaire ---*/
+.form {
+  padding-left: 70px;
+  border-left: 0.044rem solid var(--content-primary);
+  width: 120%;
+  height: 120%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  caret-color: var(--content-primary);
+}
+
+.input + .input {
+  margin-top: 25px;
+}
+
+.input__label {
+  margin-bottom: 10px;
+}
+
+.input__element {
+  color: var(--content-primary);
+  background-color: var(--neutal-primary);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  outline: none;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--content-primary);
+  transition: 0.2s;
+}
+
+.input_textarea {
+  height: 220px;
+  padding: 10px;
+  border: 1px solid var(--content-primary);
+  resize: none;
+}
+
+.texte-erreur {
+  color: var(--complementary-primary);
 }
