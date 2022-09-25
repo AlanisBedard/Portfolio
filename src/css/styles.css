@@ -188,7 +188,16 @@ footer .social_icon {
   display: inline-block;
   border-top: 0.044rem solid var(--content-primary);
   width: 60%;
-  margin-bottom: 30px;
+}
+
+footer .line {
+  padding-top: 30px;
+}
+
+/*-------------------------------------------- Style des listes à points -------------------------------------------*/
+.list_dot {
+  list-style: url(svg/list.svg);
+  padding-left: 18px;
 }
 
 /*--------------------------------------------- Section Contenu Accueil -------------------------------------------*/
@@ -276,6 +285,15 @@ footer .social_icon {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 0 0 70px 0;
+}
+
+.about__hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about__hero .about__picture {
@@ -300,6 +318,37 @@ footer .social_icon {
 .about_alanisbedard p {
   margin-top: 20px;
 }
+
+/*--- Section Apprentissages ---*/
+.knowledge {
+  padding: 0 0 70px 0;
+}
+
+.knowledge h3 {
+  padding-bottom: 10px;
+}
+
+.knowledge__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.softwares ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.softwares li + li {
+  margin-left: 15px;
+}
+
+.softwares img {
+  height: 40px;
+  width: auto;
+}
+
 /*--------------------------------------------- Section Contenu Contact --------------------------------------------*/
 .contact__content {
   display: flex;
