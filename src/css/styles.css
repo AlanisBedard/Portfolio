@@ -50,6 +50,7 @@ h1,
 h2,
 h3,
 label,
+li,
 p {
   color: var(--content-primary);
   margin: 0;
@@ -270,7 +271,36 @@ footer .social_icon {
   right: 7%;
 }
 
-/*---------------------------------------------- Section Contenu Contact ---------------------------------------------*/
+/*--------------------------------------------- Section Contenu À propos -------------------------------------------*/
+.about__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__hero .about__picture {
+  max-width: 772px;
+  height: 100%;
+}
+
+.about_alanisbedard {
+  margin-left: 100px;
+}
+
+.about_alanisbedard h1 {
+  position: relative;
+}
+
+.about_alanisbedard .about__signature {
+  position: absolute;
+  top: -120%;
+  left: -11%;
+}
+
+.about_alanisbedard p {
+  margin-top: 20px;
+}
+/*--------------------------------------------- Section Contenu Contact --------------------------------------------*/
 .contact__content {
   display: flex;
   align-items: flex-start;
