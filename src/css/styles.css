@@ -207,7 +207,7 @@ footer .line {
 
 /*--------------------------------------------- Section Contenu Accueil -------------------------------------------*/
 .hero {
-  padding: 40px 0 70px 0;
+  padding: 20px 0 70px 0;
 }
 
 .content_index {
@@ -233,46 +233,9 @@ footer .line {
   white-space: nowrap;
 }
 
-.content_index .video {
-  width: 75%;
-  height: 100%;
-}
-
-.content_index .video_container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-}
-
-.content_index .video iframe {
-  position: absolute;
-  top: -10%;
-  left: 0;
+.content_index .demo_reel {
   width: 100%;
-  height: 120%;
-  z-index: -2;
-  margin-top: -20px;
-}
-
-.video_hide1 {
-  display: inline-block;
-  position: absolute;
-  top: -33%;
-  left: auto;
-  width: 120%;
-  height: 30%;
-  background-color: var(--neutal-primary);
-  z-index: -1;
-}
-
-.video_hide2 {
-  display: inline-block;
-  position: absolute;
-  bottom: -12.3%;
-  left: auto;
-  width: 120%;
-  height: 15%;
-  background-color: var(--neutal-primary);
-  z-index: -1;
+  height: auto;
 }
 
 .content_index h1 {
