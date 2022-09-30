@@ -168,6 +168,29 @@ footer .social_icon {
   padding: 0 50px;
 }
 
+/*----------------------------------------------- Barre de défilement ----------------------------------------------*/
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #606466 #24272b;
+}
+
+/* Chrome, Edge, et Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #24272b;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #606466;
+  border-radius: 0px;
+  border: 0px none #ffffff;
+}
+/*Code créer avec l'aide du site Custom Scrollbar Maker : https://codepen.io/stephenpaton-tech/full/JjRvGmY
+
 /*----------------------------------------------------- Boutons ----------------------------------------------------*/
 .button {
   display: inline-block;
@@ -234,7 +257,7 @@ footer .line {
 }
 
 .content_index .demo_reel {
-  width: 100%;
+  width: 75%;
   height: auto;
 }
 
