@@ -470,3 +470,9 @@ footer .line {
 .texte-erreur {
   color: var(--complementary-primary);
 }
+
+/*--------------------------------------------- Section Projets --------------------------------------------*/
+.swiper-container {
+  width: 100%;
+  height: 500px;
+}

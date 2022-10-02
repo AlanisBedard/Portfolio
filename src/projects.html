@@ -19,11 +19,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="js/Main.js" defer></script>
   </head>
 
   <body>
     <div class="site-container">
-      <header>
+      <header data-component="Header" data-header="autoHide">
         <div class="wrapper_nav header__style">
           <a href="index.html" class="brand"
             ><img src="svg/logo.svg" alt="Logo Alanis Bédard"
@@ -43,6 +44,29 @@
           </nav>
         </div>
       </header>
+
+      <section class="hero">
+        <div class="wrapper">
+          <!-- Slider main container -->
+          <div class="swiper swiper-container" data-component="Carousel">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
 
       <footer>
         <div class="wrapper footer__style">
