@@ -4,16 +4,6 @@ export default class Carousel {
     this.defaultConfig = {
       slidesPerView: 1,
       loop: true,
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
       parallax: true,
       speed: 450,
 

@@ -11,6 +11,10 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* ----------------------------------------------------------------------------
    Variables
 ---------------------------------------------------------------------------- */
@@ -332,7 +336,7 @@ footer .line {
 }
 
 .about__hero .about__picture {
-  max-width: 772px;
+  width: 50%;
   height: 100%;
 }
 
@@ -381,10 +385,13 @@ footer .line {
 }
 
 /*--- Section Médias ---*/
-.about_medias img {
+.about__display {
+  background-image: url(../images/about-projects.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
-  height: 960px;
-  object-fit: cover;
+  height: 700px;
 }
 
 .about_qualites {
@@ -604,4 +611,62 @@ footer .line {
 
   background: var(--complementary-secondary);
   mix-blend-mode: overlay;
+}
+
+/*--------------------------------------------- Section Projet --------------------------------------------*/
+.project__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  margin-bottom: 60px;
+}
+
+.button__back {
+  position: fixed;
+  left: 50%;
+  top: 7%;
+  mix-blend-mode: difference;
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+}
+
+.button__back a::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 25px;
+  transform: rotate(45deg);
+
+  background-color: var(--content-primary);
+}
+
+.button__back a::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 25px;
+  transform: translateY(-100%) rotate(-45deg);
+
+  background-color: var(--content-primary);
+}
+
+.project__description p {
+  max-width: 700px;
+}
+
+.gallery {
+  margin: 60px 0 150px 0;
+}
+
+.gallery__display {
+  background-image: url(../images/projet1-display.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  width: 100%;
+  height: 700px;
 }
