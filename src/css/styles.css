@@ -474,7 +474,7 @@ footer .line {
   padding-left: 70px;
   border-left: 0.044rem solid var(--content-primary);
   width: 120%;
-  height: 120%;
+  height: 500px;
 }
 
 .input {
@@ -517,6 +517,7 @@ footer .line {
 
 .form_confirmation {
   display: none;
+  height: 120%;
 }
 
 .form button {
