@@ -220,6 +220,15 @@ footer .social_icon {
 /*Code créer avec l'aide du site Custom Scrollbar Maker : https://codepen.io/stephenpaton-tech/full/JjRvGmY
 
 /*----------------------------------------------------- Boutons ----------------------------------------------------*/
+.reset-style_button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: var(--content-primary);
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .button {
   display: inline-block;
   padding: 10px 0;
@@ -504,6 +513,14 @@ footer .line {
 
 .texte-erreur {
   color: var(--complementary-primary);
+}
+
+.form_confirmation {
+  display: none;
+}
+
+.form button {
+  margin-top: 25px;
 }
 
 /*--------------------------------------------- Section Projets --------------------------------------------*/
