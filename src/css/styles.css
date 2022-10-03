@@ -19,7 +19,7 @@ html {
   --content-primary: #edf2ef;
   --content-secondary: #f9fffb;
   --content-tertiary: #e5e8e4;
-  --content-transparence: rgba(237, 242, 239, 0.3);
+  --content-transparence: rgba(237, 242, 239, 0.5);
 
   /* Couleurs Neutres */
   --neutal-primary: #24272b;
@@ -138,18 +138,29 @@ header {
 }
 
 /*------------------------------------------------------ Footer ------------------------------------------------------*/
-footer {
-  padding: 0 0 20px 0;
-}
-
 .footer__style {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  padding: 0 0 20px 0;
 }
 
-footer .socials {
+.footer__style_projects {
+  position: absolute;
+  right: 10% !important;
+  bottom: 3% !important;
+  z-index: 15;
+}
+
+.footer__style .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__style_projects .socials {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -480,6 +491,10 @@ footer .line {
 }
 
 /*--------------------------------------------- Section Projets --------------------------------------------*/
+.projects__hero {
+  position: relative;
+}
+
 .swiper-container {
   width: 100%;
   height: 100vh;
@@ -506,12 +521,14 @@ footer .line {
   width: 20px !important;
   height: 30px !important;
   color: var(--content-primary) !important;
+  padding: 0 3% !important;
 }
 
 .swiper-pagination-bullet {
   width: 15px !important;
   height: 15px !important;
   background-color: var(--content-transparence) !important;
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -520,6 +537,7 @@ footer .line {
 
 .swiper-pagination-horizontal {
   left: 10% !important;
+  bottom: 3% !important;
 }
 
 .hero__bgi {
@@ -533,7 +551,23 @@ footer .line {
 }
 
 .hero__bgi img {
+  position: relative;
   width: 100%;
-  height: 900px;
+  height: 100%;
   object-fit: cover;
+}
+
+.hero__bgi::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+
+  background: var(--complementary-secondary);
+  mix-blend-mode: overlay;
 }
