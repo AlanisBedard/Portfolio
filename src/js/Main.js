@@ -8,7 +8,7 @@ class Main {
 
   init() {
     //Pour les carousels
-    const components = document.querySelectorAll('[data-component="Carousel"]');
+    const components = document.querySelectorAll("[data-component]");
 
     for (let i = 0; i < components.length; i++) {
       const component = components[i];
