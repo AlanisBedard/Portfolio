@@ -18,6 +18,7 @@ export default class Header {
 
   /* Méthode d'initialisation */
   init() {
+    console.log("ok");
     window.addEventListener("scroll", this.OnScroll.bind(this));
   }
 
