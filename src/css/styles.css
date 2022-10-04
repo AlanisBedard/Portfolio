@@ -50,6 +50,11 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -1128,7 +1133,7 @@ footer .line {
 }
 
 .project__final iframe {
-  width: 100vw;
+  width: 100%;
   height: 700px;
 }
 
