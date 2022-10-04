@@ -1057,9 +1057,13 @@ footer .line {
 }
 
 .gallery img:first-child {
-  width: 70%;
+  width: 100%;
   grid-column: span 3;
   justify-self: center;
+}
+
+.gallery .large__img {
+  width: 70% !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -1101,6 +1105,22 @@ footer .line {
 
 .display__project1 {
   background-image: url(../images/projet1-display.jpg);
+}
+
+.display__project2 {
+  background-image: url(../images/projet2-display.jpg);
+}
+
+.display__project3 {
+  background-image: url(../images/projet3-display.jpg);
+}
+
+.display__project4 {
+  background-image: url(../images/projet4-display.jpg);
+}
+
+.display__project5 {
+  background-image: url(../images/projet5-display.jpg);
 }
 
 .project__skills {

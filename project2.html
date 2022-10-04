@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projet 2</title>
+    <title>Robot à Montréal</title>
 
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -46,6 +46,136 @@
           </nav>
         </div>
       </header>
+
+      <div class="button__back">
+        <a href="#top" onclick="backToProjects();"></a>
+      </div>
+
+      <section class="project__hero">
+        <h2>Animation Multimédia</h2>
+        <h1 class="project__title">Robot à Montréal</h1>
+        <div class="hero__bgi">
+          <img
+            src="images/projet2-cover.jpg"
+            alt="Couverture du deuxième projet"
+          />
+        </div>
+      </section>
+
+      <script>
+        function toPage() {
+          window.location = "projects.html#slide2";
+        }
+        function backToProjects() {
+          //redirect after 3 seconds for i min pass 60000
+          setTimeout("toPage()", 1000);
+        }
+      </script>
+      <!-- Code du Timer trouvé sur tutorialsplane.com et adapté selon les besoins : https://www.tutorialsplane.com/jquery-redirect-page-seconds-button-click/ -->
+
+      <section class="project__description">
+        <div class="wrapper">
+          <h3>Description</h3>
+          <p>
+            Maecenas commodo vestibulum ullamcorper. Etiam vitae commodo justo.
+            Nam at accumsan metus. Duis sit amet odio felis. Pellentesque
+            pharetra interdum congue. Maecenas quis ligula sit amet justo
+            molestie efficitur. Curabitur aliquet odio sed sapien tempor
+            iaculis. Sed congue tincidunt orci nec vulputate.
+          </p>
+          <div class="gallery">
+            <img
+              src="images/projet2-description1.jpg"
+              alt="Croquis du personnage principal"
+            />
+            <img
+              src="images/projet2-description2.jpg"
+              alt="Tenu d'été du personnage principal"
+              class="small__img"
+            />
+            <img
+              src="images/projet2-description3.jpg"
+              alt="Tenu d'automne du personnage principal"
+              class="small__img"
+            />
+            <img
+              src="images/projet2-description4.jpg"
+              alt="Tenu d'hiver du personnage principal"
+              class="small__img"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="gallery__display display__project2"></div>
+
+    <div class="site-container">
+      <section class="project__skills">
+        <div class="wrapper skills_medias">
+          <img src="images/projet2-skills.jpg" alt="Image du projet Blender" />
+          <div class="skills_infos">
+            <h3>Compétences</h3>
+            <p>
+              Maecenas commodo vestibulum ullamcorper. Etiam vitae commodo
+              justo. Nam at accumsan metus. Duis sit amet odio felis.
+              Pellentesque pharetra interdum congue. Maecenas quis ligula sit
+              amet justo molestie efficitur. Curabitur aliquet odio sed sapien
+              tempor iaculis. Sed congue tincidunt orci nec vulputate.
+            </p>
+            <div class="softwares skills_softwares">
+              <h3>Logiciels</h3>
+              <ul class="">
+                <li>
+                  <a href="https://www.blender.org/" target="_blank"
+                    ><img
+                      src="svg/software-blender.svg"
+                      alt="Logo du logiciel Blender"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://procreate.art/" target="_blank"
+                    ><img
+                      src="svg/software-procreate.svg"
+                      alt="Logo du logiciel Procreate"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.adobe.com/ca_fr/products/photoshop.html"
+                    target="_blank"
+                    ><img
+                      src="svg/software-photoshop.svg"
+                      alt="Logo du logiciel Photoshop"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="project__final">
+      <iframe
+        src="https://www.youtube.com/embed/W3Mt_KUi2LE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <div class="site-container">
+      <section class="credits">
+        <div class="wrapper">
+          <h3>Crédits</h3>
+          <p>
+            Alanis Bédard | Cinématographie, modélisation, textures et
+            animations
+          </p>
+        </div>
+      </section>
 
       <footer>
         <div class="wrapper footer__style">
