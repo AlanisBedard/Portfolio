@@ -226,6 +226,18 @@ button:hover {
   z-index: 15;
 }
 
+@media screen and (max-width: 460px) {
+  .footer__style_projects {
+    right: 3% !important;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .footer__style_projects {
+    right: 15% !important;
+  }
+}
+
 .footer__style .socials {
   display: flex;
   align-items: center;
@@ -268,7 +280,7 @@ footer .social_icon {
 
 @media screen and (max-width: 500px) {
   .site-container {
-    padding: 70px;
+    padding: 0 70px;
   }
 }
 
@@ -763,6 +775,30 @@ footer .line {
   margin: 20px 0 40px 0;
 }
 
+@media screen and (max-width: 800px) {
+  .project__title {
+    font-size: 3.375rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project__title {
+    font-size: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project__title {
+    font-size: 2.5rem;
+  }
+}
+
 .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -770,11 +806,16 @@ footer .line {
   justify-content: center;
 }
 
-.navigation-buttons {
-  width: 20px !important;
-  height: 30px !important;
+.navigation-buttons::after {
+  font-size: 40px !important;
   color: var(--content-primary) !important;
   padding: 0 3% !important;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation-buttons::after {
+    font-size: 30px !important;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -791,6 +832,19 @@ footer .line {
 .swiper-pagination-horizontal {
   left: 10% !important;
   bottom: 3% !important;
+}
+
+@media screen and (max-width: 900px) {
+  .swiper-pagination-horizontal {
+    left: 15% !important;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .swiper-pagination-horizontal {
+    left: 50% !important;
+    bottom: 10% !important;
+  }
 }
 
 .hero__bgi {
