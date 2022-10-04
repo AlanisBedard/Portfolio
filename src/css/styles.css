@@ -266,6 +266,12 @@ footer .social_icon {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .site-container {
+    padding: 70px;
+  }
+}
+
 /*----------------------------------------------- Barre de défilement ----------------------------------------------*/
 /* Firefox */
 * {
@@ -297,6 +303,8 @@ footer .social_icon {
   color: var(--content-primary);
   background-color: transparent;
   cursor: pointer;
+
+  align-self: center;
 }
 
 .button {
@@ -307,6 +315,12 @@ footer .social_icon {
   border: 1px solid var(--content-primary);
 
   transition: all 300ms;
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    width: 250px;
+  }
 }
 
 .button:hover {
@@ -651,6 +665,13 @@ footer .line {
   height: 500px;
 }
 
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
 .input {
   display: flex;
   flex-direction: column;
@@ -696,6 +717,30 @@ footer .line {
 
 .form button {
   margin-top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact__content {
+    flex-direction: column;
+  }
+
+  .contact_infos {
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .contact_infos p:first-of-type {
+    padding: 15px 0 15px 0;
+  }
+
+  .form {
+    padding-left: 0;
+    padding-top: 30px;
+    border-left: 0 solid var(--content-primary);
+    border-top: 0.044rem solid var(--content-primary);
+    width: 100%;
+    height: 500px;
+  }
 }
 
 /*--------------------------------------------- Section Projets --------------------------------------------*/
