@@ -890,9 +890,10 @@ footer .line {
   line-height: 109.97%;
   text-transform: uppercase;
   margin: 20px 0 40px 0;
+  text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 815px) {
   .project__title {
     font-size: 3.375rem;
   }
@@ -1015,6 +1016,7 @@ footer .line {
   z-index: 100;
   width: 30px;
   height: 30px;
+  transition: all 300ms;
 }
 
 .button__back a::before {
@@ -1055,14 +1057,45 @@ footer .line {
   justify-self: center;
 }
 
+@media screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    margin: 50px 0 70px 0;
+  }
+
+  .gallery img:first-child {
+    width: 100%;
+    grid-column: 1;
+    justify-self: center;
+  }
+}
+
 .gallery__display {
-  background-image: url(../images/projet1-display.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: 100% auto;
+  background-size: cover;
   width: 100%;
   height: 700px;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery__display {
+    background-position: right;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery__display {
+    height: 300px;
+  }
+}
+
+.display__project1 {
+  background-image: url(../images/projet1-display.jpg);
 }
 
 .project__skills {
@@ -1073,6 +1106,17 @@ footer .line {
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
   grid-gap: 30px;
+}
+
+.skills_medias img {
+  align-self: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .skills_medias {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
 }
 
 .skills_infos {
@@ -1089,5 +1133,5 @@ footer .line {
 }
 
 .credits {
-  margin: 70px;
+  margin: 70px 0;
 }
