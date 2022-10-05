@@ -792,6 +792,7 @@ footer .line {
 
 .contact_infos {
   padding-right: 70px;
+  transition: all 300ms;
 }
 
 .contact_infos p:first-of-type {
@@ -800,6 +801,10 @@ footer .line {
 
 .contact_infos p:last-of-type {
   margin-top: 5px;
+}
+
+.contact_infos a:hover {
+  color: var(--complementary-secondary);
 }
 
 .references {
