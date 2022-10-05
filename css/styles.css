@@ -1174,4 +1174,9 @@ footer .line {
 
 .credits {
   margin: 70px 0;
+  transition: all 300ms;
+}
+
+.credits a:hover {
+  color: var(--complementary-secondary);
 }
