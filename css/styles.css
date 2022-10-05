@@ -775,6 +775,10 @@ footer .line {
   justify-content: center;
 }
 
+.contact__content > * {
+  flex: 1;
+}
+
 .contact_infos {
   padding-right: 70px;
 }
