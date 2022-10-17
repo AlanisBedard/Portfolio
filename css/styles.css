@@ -968,6 +968,13 @@ footer .line {
   justify-content: center;
 }
 
+.swiper-slide h2 {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+/*** Code trouvé sur W3schools : https://www.w3schools.com/howto/howto_css_disable_text_selection.asp ***/
+
 .swiper-button-prev {
   left: 20px !important;
 }
@@ -1071,6 +1078,13 @@ footer .line {
   height: 100vh;
   margin-bottom: 60px;
 }
+.project__hero h1,
+.project__hero h2 {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+/*** Code trouvé sur W3schools : https://www.w3schools.com/howto/howto_css_disable_text_selection.asp ***/
 
 .button__back {
   position: fixed;
