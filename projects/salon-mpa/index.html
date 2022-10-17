@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Robot à Montréal</title>
+    <title>Salon MPA</title>
 
-    <link rel="icon" type="image/x-icon" href="svg/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../../svg/favicon.svg" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,27 +21,27 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="js/Main.js" defer></script>
+    <script type="module" src="../../js/Main.js" defer></script>
   </head>
 
   <body>
     <div class="site-container">
       <header class="header" data-component="Header" data-header="scrollLimit">
         <div class="wrapper_nav header__style">
-          <a href="index.html" class="brand"
-            ><img src="svg/logo.svg" alt="Logo Alanis Bédard"
+          <a href="../../" class="brand"
+            ><img src="../../svg/logo.svg" alt="Logo Alanis Bédard"
           /></a>
 
           <nav>
             <ul class="nav_main">
               <div class="nav__animation">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="projects.html">Projets</a></li>
+                <li><a href="../../">Accueil</a></li>
+                <li><a href="../../about/">À propos</a></li>
+                <li><a href="../../projects/">Projets</a></li>
               </div>
               <li>
-                <a href="contact.html"
-                  ><img src="svg/letter.svg" alt="Logo de contact"
+                <a href="../../contact/"
+                  ><img src="../../svg/letter.svg" alt="Logo de contact"
                 /></a>
               </li>
             </ul>
@@ -54,19 +54,19 @@
       </div>
 
       <section class="project__hero">
-        <h2>Animation Multimédia</h2>
-        <h1 class="project__title">Robot à Montréal</h1>
+        <h2>Mouvement québécois de la qualité</h2>
+        <h1 class="project__title">Salon MPA</h1>
         <div class="hero__bgi">
           <img
-            src="images/projet2-cover.jpg"
-            alt="Couverture du deuxième projet"
+            src="../../images/projet3-cover.jpg"
+            alt="Couverture du troisième projet"
           />
         </div>
       </section>
 
       <script>
         function toPage() {
-          window.location = "projects.html#slide2";
+          window.location = "../../projects#slide3";
         }
         function backToProjects() {
           //redirect after 3 seconds for i min pass 60000
@@ -79,29 +79,29 @@
         <div class="wrapper">
           <h3>Description</h3>
           <p>
-            Robot à Montréal est une animation mélangeant une scène
-            photographiée et la modélisation 3D. Ce projet met en scène un robot
-            destructeur circulant dans un paysage urbain. L’ambiance audio
-            devait être montée de toutes pièces avec l’aide de sons disponibles
-            sur le web.
+            Lors de mon stage d’été 2022 au Mouvement québécois de la qualité,
+            j’ai eu l'occasion de créer l’introduction de la 30ième édition du
+            Salon MPA. J’ai eu la chance d’avoir carte blanche lors de ce
+            projet, me permettant d’expérimenter avec d’autres types
+            d’animations 3D.
           </p>
           <div class="gallery">
             <img
-              src="images/projet2-description1.jpg"
+              src="../../images/projet3-description1.png"
               alt="Croquis du personnage principal"
             />
             <img
-              src="images/projet2-description2.jpg"
+              src="../../images/projet3-description2.png"
               alt="Tenu d'été du personnage principal"
               class="small__img"
             />
             <img
-              src="images/projet2-description3.jpg"
+              src="../../images/projet3-description3.png"
               alt="Tenu d'automne du personnage principal"
               class="small__img"
             />
             <img
-              src="images/projet2-description4.jpg"
+              src="../../images/projet3-description4.png"
               alt="Tenu d'hiver du personnage principal"
               class="small__img"
             />
@@ -110,21 +110,23 @@
       </section>
     </div>
 
-    <div class="gallery__display display__project2"></div>
+    <div class="gallery__display display__project3"></div>
 
     <div class="site-container">
       <section class="project__skills">
         <div class="wrapper skills_medias">
-          <img src="images/projet2-skills.jpg" alt="Image du projet Blender" />
+          <img
+            src="../../images/projet3-skills.png"
+            alt="Image du projet Blender"
+          />
           <div class="skills_infos">
             <h3>Compétences</h3>
             <p>
-              Lors de ce projet, j’ai pu découvrir et expérimenter avec des
-              banques de textures disponibles sur le web. J’ai ensuite pu
-              modifier ces textures de métal en y ajoutant des dessins et
-              graffitis avec l’aide de Photoshop. J’ai aussi dû être créative
-              pour produire une scène 3D simulant l’environnement réaliste de la
-              photo.
+              Devant recréer le logo du Salon MPA, j’ai placé aux endroits
+              stratégiques des lumières de tous types. J’ai aussi animé le
+              mouvement de caméra passant au travers des rubans bougeant le long
+              des courbes voulues. Les matériaux que j’ai créés devaient réagir
+              à l’environnement de façon similaire à de vrais rubans.
             </p>
             <div class="softwares skills_softwares">
               <h3>Logiciels</h3>
@@ -132,15 +134,8 @@
                 <li>
                   <a href="https://www.blender.org/" target="_blank"
                     ><img
-                      src="svg/software-blender.svg"
+                      src="../../svg/software-blender.svg"
                       alt="Logo du logiciel Blender"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://procreate.art/" target="_blank"
-                    ><img
-                      src="svg/software-procreate.svg"
-                      alt="Logo du logiciel Procreate"
                   /></a>
                 </li>
                 <li>
@@ -148,7 +143,7 @@
                     href="https://www.adobe.com/ca_fr/products/photoshop.html"
                     target="_blank"
                     ><img
-                      src="svg/software-photoshop.svg"
+                      src="../../svg/software-photoshop.svg"
                       alt="Logo du logiciel Photoshop"
                   /></a>
                 </li>
@@ -161,7 +156,7 @@
 
     <section class="project__final">
       <iframe
-        src="https://www.youtube-nocookie.com/embed/bibMXgY5duE"
+        src="https://www.youtube-nocookie.com/embed/sflCpfYE-cY"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -177,18 +172,6 @@
             Alanis Bédard | Cinématographie, modélisation, textures et
             animations
           </p>
-          <p>
-            Textures réalistes trouvé sur ambientCG |
-            <a href="https://ambientcg.com/">https://ambientcg.com/</a>
-          </p>
-          <p>
-            Vidéo par Cottonbro trouvé sur Pexels |
-            <a
-              href="https://www.pexels.com/video/creepy-clown-extreme-close-up-5427406/"
-              >https://www.pexels.com/video/creepy-clown-extreme-close-up-5427406/</a
-            >
-          </p>
-          <p>Photo de Montréal par François R. Arsenault</p>
         </div>
       </section>
 
@@ -202,7 +185,7 @@
                 target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-linkedin.svg"
+                  src="../../svg/social-linkedin.svg"
                   alt="Le LinkedIn d'Alanis Bédard"
               /></a>
             </li>
@@ -210,7 +193,7 @@
               <a href="https://www.behance.net/alanisbedard" target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-behance.svg"
+                  src="../../svg/social-behance.svg"
                   alt="Le Behance d'Alanis Bédard"
               /></a>
             </li>
@@ -220,7 +203,7 @@
                 target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-instagram.svg"
+                  src="../../svg/social-instagram.svg"
                   alt="L'Instagram d'Alanis Bédard"
               /></a>
             </li>
@@ -230,7 +213,7 @@
                 target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-youtube.svg"
+                  src="../../svg/social-youtube.svg"
                   alt="La chaîne Youtube d'Alanis Bédard"
               /></a>
             </li>
@@ -238,7 +221,7 @@
               <a href="https://github.com/AlanisBedard" target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-github.svg"
+                  src="../../svg/social-github.svg"
                   alt="Le GitHub d'Alanis Bédard"
               /></a>
             </li>
@@ -246,7 +229,7 @@
               <a href="https://sketchfab.com/alanisbedard" target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-sketchfab.svg"
+                  src="../../svg/social-sketchfab.svg"
                   alt="Le Sketchfab d'Alanis Bédard"
               /></a>
             </li>

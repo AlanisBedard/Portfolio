@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L’oasis</title>
+    <title>Mia dans l'autobus</title>
 
-    <link rel="icon" type="image/x-icon" href="svg/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../../svg/favicon.svg" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,27 +21,27 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="js/Main.js" defer></script>
+    <script type="module" src="../../js/Main.js" defer></script>
   </head>
 
   <body>
     <div class="site-container">
       <header class="header" data-component="Header" data-header="scrollLimit">
         <div class="wrapper_nav header__style">
-          <a href="index.html" class="brand"
-            ><img src="svg/logo.svg" alt="Logo Alanis Bédard"
+          <a href="../../" class="brand"
+            ><img src="../../svg/logo.svg" alt="Logo Alanis Bédard"
           /></a>
 
           <nav>
             <ul class="nav_main">
               <div class="nav__animation">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="projects.html">Projets</a></li>
+                <li><a href="../../">Accueil</a></li>
+                <li><a href="../../about/">À propos</a></li>
+                <li><a href="../../projects/">Projets</a></li>
               </div>
               <li>
-                <a href="contact.html"
-                  ><img src="svg/letter.svg" alt="Logo de contact"
+                <a href="../../contact/"
+                  ><img src="../../svg/letter.svg" alt="Logo de contact"
                 /></a>
               </li>
             </ul>
@@ -54,11 +54,11 @@
       </div>
 
       <section class="project__hero">
-        <h2>Animation Multimédia</h2>
-        <h1 class="project__title">L’oasis</h1>
+        <h2>Animation 3D</h2>
+        <h1 class="project__title">Mia dans l’autobus</h1>
         <div class="hero__bgi">
           <img
-            src="images/projet4-cover.jpg"
+            src="../../images/projet1-cover.jpg"
             alt="Couverture du premier projet"
           />
         </div>
@@ -66,7 +66,7 @@
 
       <script>
         function toPage() {
-          window.location = "projects.html#slide4";
+          window.location = "../../projects#slide1";
         }
         function backToProjects() {
           //redirect after 3 seconds for i min pass 60000
@@ -79,29 +79,29 @@
         <div class="wrapper">
           <h3>Description</h3>
           <p>
-            Ce projet fut une belle entrée en matière dans le monde du
-            scénarimage. En utilisant de multiples modélisations créées par des
-            artistes 3D, j’ai pu mettre en scène ma vision. Mon but étant de
-            créer un scénario simple pouvant être interprété de différentes
-            façons, tout en ayant un visuel agréable.
+            Mia dans l’autobus est mon projet final du cours d’animation 3D. Je
+            devais créer une courte animation 3D scénarisée. J’ai dessiné,
+            modélisé et animé le personnage principal de cette vidéo, ainsi que
+            tout le décor l’entourant.
           </p>
           <div class="gallery">
             <img
-              src="images/projet4-description1.png"
+              src="../../images/projet1-description1.png"
               alt="Croquis du personnage principal"
+              class="large__img"
             />
             <img
-              src="images/projet4-description2.png"
+              src="../../images/projet1-description2.png"
               alt="Tenu d'été du personnage principal"
               class="small__img"
             />
             <img
-              src="images/projet4-description3.png"
+              src="../../images/projet1-description3.png"
               alt="Tenu d'automne du personnage principal"
               class="small__img"
             />
             <img
-              src="images/projet4-description4.png"
+              src="../../images/projet1-description4.png"
               alt="Tenu d'hiver du personnage principal"
               class="small__img"
             />
@@ -110,22 +110,25 @@
       </section>
     </div>
 
-    <div class="gallery__display display__project4"></div>
+    <div class="gallery__display display__project1"></div>
 
     <div class="site-container">
       <section class="project__skills">
         <div class="wrapper skills_medias">
-          <img src="images/projet4-skills.png" alt="Image du projet Blender" />
+          <img
+            src="../../images/projet1-skills.jpg"
+            alt="Image du projet Blender"
+          />
           <div class="skills_infos">
             <h3>Compétences</h3>
             <p>
-              Avec l’aide de Mixamo, j’ai pu découvrir l’animation non-linéaire
-              sur Blender. Avec cet outil, il est facile de créer des
-              transitions simples entre des animations enregistrées, ce qui
-              facilite la tâche de scénarisation. J’ai aussi eu le plaisir
-              d’animer et d'alterner entre plusieurs caméras selon des chemins
-              prédéterminés. J’ai aussi appris beaucoup sur l'éditeur Shader
-              après la création de plusieurs matériaux comme l’eau de l’Oasis.
+              Ce projet m’a amené à explorer les armatures et l’animation de
+              celle-ci. Le squelette manipule de façon organique le modèle de
+              mon personnage principal, et de simples objets vides contrôlent le
+              mouvement des yeux. Les pupilles et les sourcils bougent grâce à
+              des <span style="white-space: nowrap">« Shape Keys ».</span> Ce
+              fut l’une de mes premières animations 3D et j’en ai beaucoup
+              appris.
             </p>
             <div class="softwares skills_softwares">
               <h3>Logiciels</h3>
@@ -133,8 +136,15 @@
                 <li>
                   <a href="https://www.blender.org/" target="_blank"
                     ><img
-                      src="svg/software-blender.svg"
+                      src="../../svg/software-blender.svg"
                       alt="Logo du logiciel Blender"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://procreate.art/" target="_blank"
+                    ><img
+                      src="../../svg/software-procreate.svg"
+                      alt="Logo du logiciel Procreate"
                   /></a>
                 </li>
                 <li>
@@ -142,7 +152,7 @@
                     href="https://www.adobe.com/ca_fr/products/photoshop.html"
                     target="_blank"
                     ><img
-                      src="svg/software-photoshop.svg"
+                      src="../../svg/software-photoshop.svg"
                       alt="Logo du logiciel Photoshop"
                   /></a>
                 </li>
@@ -155,7 +165,7 @@
 
     <section class="project__final">
       <iframe
-        src="https://www.youtube-nocookie.com/embed/lpHiz5E6Txg"
+        src="https://www.youtube.com/embed/W3Mt_KUi2LE"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -168,28 +178,8 @@
         <div class="wrapper">
           <h3>Crédits</h3>
           <p>
-            Alanis Bédard | Cinématographie, modélisation du sable, textures et
+            Alanis Bédard | Cinématographie, modélisation, textures et
             animations
-          </p>
-          <p>
-            jakobscheidt | Gameready Character,
-            <a href="https://skfb.ly/6SEwJ">https://skfb.ly/6SEwJ</a>
-          </p>
-          <p>
-            jakobscheidt | Winter Girl,
-            <a href="https://skfb.ly/6XZ9M">https://skfb.ly/6XZ9M</a>
-          </p>
-          <p>
-            Máté Varga | The Carrier,
-            <a href="https://skfb.ly/oroD7">https://skfb.ly/oroD7 </a>
-          </p>
-          <p>
-            Erroratten | Desert - Rocks - Stones - Pack,
-            <a href="https://skfb.ly/op9zQ">https://skfb.ly/op9zQ</a>
-          </p>
-          <p>
-            Parelaxel | Stylized Palm tree set,
-            <a href="https://skfb.ly/6Y98A">https://skfb.ly/6Y98A</a>
           </p>
         </div>
       </section>
@@ -204,7 +194,7 @@
                 target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-linkedin.svg"
+                  src="../../svg/social-linkedin.svg"
                   alt="Le LinkedIn d'Alanis Bédard"
               /></a>
             </li>
@@ -212,7 +202,7 @@
               <a href="https://www.behance.net/alanisbedard" target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-behance.svg"
+                  src="../../svg/social-behance.svg"
                   alt="Le Behance d'Alanis Bédard"
               /></a>
             </li>
@@ -222,7 +212,7 @@
                 target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-instagram.svg"
+                  src="../../svg/social-instagram.svg"
                   alt="L'Instagram d'Alanis Bédard"
               /></a>
             </li>
@@ -232,7 +222,7 @@
                 target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-youtube.svg"
+                  src="../../svg/social-youtube.svg"
                   alt="La chaîne Youtube d'Alanis Bédard"
               /></a>
             </li>
@@ -240,7 +230,7 @@
               <a href="https://github.com/AlanisBedard" target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-github.svg"
+                  src="../../svg/social-github.svg"
                   alt="Le GitHub d'Alanis Bédard"
               /></a>
             </li>
@@ -248,7 +238,7 @@
               <a href="https://sketchfab.com/alanisbedard" target="_blank"
                 ><img
                   class="social_icon"
-                  src="svg/social-sketchfab.svg"
+                  src="../../svg/social-sketchfab.svg"
                   alt="Le Sketchfab d'Alanis Bédard"
               /></a>
             </li>

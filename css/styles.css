@@ -72,6 +72,14 @@ h1 {
   text-transform: uppercase;
 }
 
+.project__page {
+  color: var(--content-primary);
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: none;
+  transition: all 300ms;
+}
+
 h2 {
   font-weight: 300;
   font-size: 1.5rem;
@@ -114,6 +122,11 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+li {
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 a > img:hover,
@@ -461,6 +474,7 @@ footer .line {
   position: absolute;
   top: -120%;
   right: 7%;
+  opacity: 0.3;
 }
 
 @media screen and (max-width: 1300px) {
@@ -589,6 +603,7 @@ footer .line {
   position: absolute;
   top: -120%;
   left: -11%;
+  opacity: 0.3;
 }
 
 .about_alanisbedard p {
@@ -909,6 +924,10 @@ footer .line {
   margin-right: auto;
 }
 
+.project__title_kind {
+  text-align: center;
+}
+
 .project__title {
   font-weight: 700;
   font-size: 5.625rem;
@@ -947,6 +966,26 @@ footer .line {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.swiper-button-prev {
+  left: 20px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .swiper-button-prev {
+    right: 10px !important;
+  }
+}
+
+.swiper-button-next {
+  right: 20px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .swiper-button-next {
+    right: 10px !important;
+  }
 }
 
 .navigation-buttons::after {
@@ -1062,6 +1101,11 @@ footer .line {
   transform: translateY(-100%) rotate(-45deg);
 
   background-color: var(--content-primary);
+}
+
+.button__back:hover {
+  transition: all 300ms;
+  transform: scale(1.1);
 }
 
 .project__description p {
