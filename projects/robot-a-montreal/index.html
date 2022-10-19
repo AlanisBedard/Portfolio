@@ -49,8 +49,8 @@
         </div>
       </header>
 
-      <div class="button__back">
-        <a href="#top" onclick="backToProjects();"></a>
+      <div class="button__back" data-component="Links" data-page="1">
+        <a href="#top"></a>
       </div>
 
       <section class="project__hero">
@@ -63,17 +63,6 @@
           />
         </div>
       </section>
-
-      <script>
-        function toPage() {
-          window.location = "../../projects#slide2";
-        }
-        function backToProjects() {
-          //redirect after 3 seconds for i min pass 60000
-          setTimeout("toPage()", 1000);
-        }
-      </script>
-      <!-- Code du Timer trouvé sur tutorialsplane.com et adapté selon les besoins : https://www.tutorialsplane.com/jquery-redirect-page-seconds-button-click/ -->
 
       <section class="project__description">
         <div class="wrapper">
@@ -164,10 +153,11 @@
 
     <section class="project__final">
       <iframe
-        src="https://www.youtube-nocookie.com/embed/bibMXgY5duE"
-        title="YouTube video player"
+        src="https://www.youtube-nocookie.com/embed/bibMXgY5duE?vq=hd1080&rel=0&color=white"
+        width="560"
+        height="315"
+        title="L'Attaque du Robot"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
     </section>

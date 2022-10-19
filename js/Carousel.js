@@ -1,3 +1,5 @@
+import Cache from "./utils/Cache.js";
+
 export default class Carousel {
   constructor(component) {
     this.component = component;
@@ -6,6 +8,7 @@ export default class Carousel {
       loop: true,
       parallax: true,
       speed: 450,
+      initialSlide: parseFloat(Cache.get("Links")),
 
       pagination: {
         el: ".swiper-pagination",
@@ -18,7 +21,6 @@ export default class Carousel {
         prevEl: ".swiper-button-prev",
       },
     };
-
     this.init();
   }
 
