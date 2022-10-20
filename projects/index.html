@@ -16,12 +16,47 @@
       rel="stylesheet"
     />
 
+    <!-- Hotjar Tracking Code for https://www.alanisbedard.com/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3210227, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BRXKELD0P6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BRXKELD0P6");
+    </script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="../js/Main.js" defer></script>
+
+    <!-- or directly from unpkg -->
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
   </head>
 
   <body id="swup" class="transition-fadein">
@@ -44,7 +79,7 @@
                 </li>
               </div>
               <li>
-                <a href="../contact/" data-component="Links"
+                <a href="../contact/"
                   ><img src="../svg/letter.svg" alt="Logo de contact"
                 /></a>
               </li>
@@ -53,6 +88,7 @@
         </div>
       </header>
     </div>
+
     <section class="projects__hero">
       <!-- Slider main container -->
       <div class="swiper swiper-container" data-component="Carousel">

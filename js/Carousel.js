@@ -3,6 +3,9 @@ import Cache from "./utils/Cache.js";
 export default class Carousel {
   constructor(component) {
     this.component = component;
+    if (Cache.get("Links") === undefined || null) {
+      Cache.set("Links", 0, false);
+    }
     this.defaultConfig = {
       slidesPerView: 1,
       loop: true,
