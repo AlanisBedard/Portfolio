@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projets</title>
 
+    <meta
+      name="description"
+      content="Portfolio - Alanis Bédard. Intégratrice multimédia. Visitez mes projets de 3D, design, animation et web."
+    />
+
     <link rel="icon" type="image/x-icon" href="../svg/favicon.svg" />
 
     <link rel="stylesheet" href="../css/styles.css" />
@@ -52,16 +57,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="../js/Main.js" defer></script>
-
-    <!-- or directly from unpkg -->
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
   </head>
 
-  <body id="swup" class="transition-fadein">
+  <body>
     <div class="site-container">
-      <header class="header" data-component="Header" data-header="scrollLimit">
+      <header class="header">
         <div class="wrapper_nav header__style">
           <a href="../" class="brand"
             ><img src="../svg/logo.svg" alt="Logo Alanis Bédard"
@@ -91,14 +94,17 @@
 
     <section class="projects__hero">
       <!-- Slider main container -->
-      <div class="swiper swiper-container" data-component="Carousel">
+      <div
+        class="swiper swiper-container animation__projects"
+        data-component="Carousel"
+      >
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper animation__wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">
+          <div class="swiper-slide animation__lazy">
             <h2 class="project__title_kind">Animation 3D</h2>
             <h2 class="project__title">Mia dans l’autobus</h2>
-            <a href="mia-dans-lautobus/" class="button__small"
+            <a href="mia-dans-lautobus/" class="button__small animation__fade"
               >En savoir plus</a
             >
             <div class="hero__bgi">
@@ -108,10 +114,12 @@
               />
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide animation__lazy">
             <h2 class="project__title_kind">Animation multimédia</h2>
             <h2 class="project__title">Robot à Montréal</h2>
-            <a href="robot-a-montreal/" class="button__small">En savoir plus</a>
+            <a href="robot-a-montreal/" class="button__small animation__fade"
+              >En savoir plus</a
+            >
             <div class="hero__bgi">
               <img
                 src="../images/projet2-cover.jpg"
@@ -119,12 +127,14 @@
               />
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide animation__lazy">
             <h2 class="project__title_kind">
               Mouvement québécois de la qualité
             </h2>
             <h2 class="project__title">Salon MPA</h2>
-            <a href="salon-mpa/" class="button__small">En savoir plus</a>
+            <a href="salon-mpa/" class="button__small animation__fade"
+              >En savoir plus</a
+            >
             <div class="hero__bgi">
               <img
                 src="../images/projet3-cover.jpg"
@@ -132,10 +142,12 @@
               />
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide animation__lazy">
             <h2 class="project__title_kind">Animation multimédia</h2>
             <h2 class="project__title">L’oasis</h2>
-            <a href="loasis/" class="button__small">En savoir plus</a>
+            <a href="loasis/" class="button__small animation__fade"
+              >En savoir plus</a
+            >
             <div class="hero__bgi">
               <img
                 src="../images/projet4-cover.jpg"
@@ -143,10 +155,12 @@
               />
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide animation__lazy">
             <h2 class="project__title_kind">Montage vidéo</h2>
             <h2 class="project__title">Lumifest</h2>
-            <a href="lumifest/" class="button__small">En savoir plus</a>
+            <a href="lumifest/" class="button__small animation__fade"
+              >En savoir plus</a
+            >
             <div class="hero__bgi">
               <img
                 src="../images/projet5-cover.jpg"
@@ -158,14 +172,14 @@
       </div>
 
       <!-- If we need pagination -->
-      <div class="swiper-pagination pagination-buttons"></div>
+      <div class="swiper-pagination pagination-buttons animation__fade"></div>
 
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev navigation-buttons"></div>
-      <div class="swiper-button-next navigation-buttons"></div>
+      <div class="swiper-button-prev navigation-buttons animation__fade"></div>
+      <div class="swiper-button-next navigation-buttons animation__fade"></div>
 
       <footer>
-        <div class="wrapper footer__style_projects">
+        <div class="wrapper footer__style_projects animation__fade">
           <ul class="socials">
             <li>
               <a

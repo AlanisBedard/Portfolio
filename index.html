@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil</title>
 
+    <meta
+      name="description"
+      content="Portfolio - Alanis Bédard. Intégratrice multimédia. Étudiante en Techniques d'intégration multimédia."
+    />
+
     <link rel="icon" type="image/x-icon" href="svg/favicon.svg" />
 
     <link rel="stylesheet" href="css/styles.css" />
@@ -52,6 +57,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <!-- SWUP Animation -->
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="js/Main.js" defer></script>
   </head>
@@ -85,11 +93,16 @@
         <div class="wrapper_demo content_index">
           <video
             class="demo_reel"
-            src="videos/demo-reel.mp4"
             loop="loop"
             autoplay="autoplay"
             muted
-          ></video>
+            defaultmuted
+            playsinline
+            oncontextmenu="return false;"
+            preload="auto"
+          >
+            <source src="videos/demo-reel.mp4" type="video/mp4" />
+          </video>
 
           <div class="index_infos">
             <div class="titles">

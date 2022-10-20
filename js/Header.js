@@ -6,7 +6,7 @@ export default class Header {
 
     /* Condition permettant de changer la limite au niveau de la présence du Header lors du défilement de la page */
     if (this.element.dataset.header == "scrollLimit") {
-      this.scrollLimit = 0.01;
+      this.scrollLimit = 0.03;
     }
 
     this.scrollPosition = 0;
