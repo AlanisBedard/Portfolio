@@ -53,136 +53,139 @@
       gtag("config", "G-BRXKELD0P6");
     </script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <!-- SWUP Animation -->
+    <!-- SWUP librairie : https://swup.js.org/getting-started -->
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="js/Main.js" defer></script>
   </head>
 
   <body>
-    <div class="site-container-index">
-      <header class="header" data-component="Header" data-header="scrollLimit">
-        <div class="wrapper_nav header__style">
-          <a href="" class="brand"
-            ><img src="svg/logo.svg" alt="Logo Alanis Bédard"
-          /></a>
+    <div id="swup" data-component="Swup">
+      <div class="site-container-index">
+        <header
+          class="header"
+          data-component="Header"
+          data-header="scrollLimit"
+        >
+          <div class="wrapper_nav header__style">
+            <a href="#" class="brand"
+              ><img src="svg/logo.svg" alt="Logo Alanis Bédard"
+            /></a>
 
-          <nav>
-            <ul class="nav_main">
-              <div class="nav__animation">
-                <li><a href="">Accueil</a></li>
-                <li><a href="about/">À propos</a></li>
-                <li><a href="projects/">Projets</a></li>
+            <nav>
+              <ul class="nav_main">
+                <div class="nav__animation">
+                  <li><a href="#">Accueil</a></li>
+                  <li><a href="/about/">À propos</a></li>
+                  <li><a href="/projects/">Projets</a></li>
+                </div>
+                <li>
+                  <a href="/contact/"
+                    ><img src="/svg/letter.svg" alt="Logo de contact"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="transition-fade animation__page">
+          <section class="hero">
+            <div class="wrapper_demo content_index">
+              <video
+                class="demo_reel"
+                loop="loop"
+                autoplay="autoplay"
+                muted
+                defaultmuted
+                playsinline
+                oncontextmenu="return false;"
+                preload="auto"
+              >
+                <source src="videos/demo-reel.mp4" type="video/mp4" />
+              </video>
+
+              <div class="index_infos">
+                <div class="titles">
+                  <h1>
+                    Alanis Bédard
+                    <img
+                      src="svg/signature.svg"
+                      alt="Signature d'Alanis Bédard"
+                      class="signature"
+                    />
+                  </h1>
+                  <h2>Intégratice multimédia</h2>
+                </div>
+
+                <a href="/projects/" class="button">Mes projets</a>
               </div>
+            </div>
+          </section>
+        </div>
+
+        <footer>
+          <div class="wrapper footer__style">
+            <span class="line"></span>
+            <ul class="socials">
               <li>
-                <a href="contact/"
-                  ><img src="svg/letter.svg" alt="Logo de contact"
+                <a
+                  href="https://www.linkedin.com/in/alanisbedard/"
+                  target="_blank"
+                  ><img
+                    class="social_icon"
+                    src="svg/social-linkedin.svg"
+                    alt="Le LinkedIn d'Alanis Bédard"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/alanisbedard" target="_blank"
+                  ><img
+                    class="social_icon"
+                    src="svg/social-behance.svg"
+                    alt="Le Behance d'Alanis Bédard"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/alanisbedard/?hl=fr"
+                  target="_blank"
+                  ><img
+                    class="social_icon"
+                    src="svg/social-instagram.svg"
+                    alt="L'Instagram d'Alanis Bédard"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCUNT473RGfLn5Gyyt1mYWJA"
+                  target="_blank"
+                  ><img
+                    class="social_icon"
+                    src="svg/social-youtube.svg"
+                    alt="La chaîne Youtube d'Alanis Bédard"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/AlanisBedard" target="_blank"
+                  ><img
+                    class="social_icon"
+                    src="svg/social-github.svg"
+                    alt="Le GitHub d'Alanis Bédard"
+                /></a>
+              </li>
+              <li>
+                <a href="https://sketchfab.com/alanisbedard" target="_blank"
+                  ><img
+                    class="social_icon"
+                    src="svg/social-sketchfab.svg"
+                    alt="Le Sketchfab d'Alanis Bédard"
                 /></a>
               </li>
             </ul>
-          </nav>
-        </div>
-      </header>
-
-      <section class="hero">
-        <div class="wrapper_demo content_index">
-          <video
-            class="demo_reel"
-            loop="loop"
-            autoplay="autoplay"
-            muted
-            defaultmuted
-            playsinline
-            oncontextmenu="return false;"
-            preload="auto"
-          >
-            <source src="videos/demo-reel.mp4" type="video/mp4" />
-          </video>
-
-          <div class="index_infos">
-            <div class="titles">
-              <h1>
-                Alanis Bédard
-                <img
-                  src="svg/signature.svg"
-                  alt="Signature d'Alanis Bédard"
-                  class="signature"
-                />
-              </h1>
-              <h2>Intégratice multimédia</h2>
-            </div>
-
-            <a href="/projects/" class="button">Mes projets</a>
           </div>
-        </div>
-      </section>
-
-      <footer>
-        <div class="wrapper footer__style">
-          <span class="line"></span>
-          <ul class="socials">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/alanisbedard/"
-                target="_blank"
-                ><img
-                  class="social_icon"
-                  src="svg/social-linkedin.svg"
-                  alt="Le LinkedIn d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/alanisbedard" target="_blank"
-                ><img
-                  class="social_icon"
-                  src="svg/social-behance.svg"
-                  alt="Le Behance d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/alanisbedard/?hl=fr"
-                target="_blank"
-                ><img
-                  class="social_icon"
-                  src="svg/social-instagram.svg"
-                  alt="L'Instagram d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCUNT473RGfLn5Gyyt1mYWJA"
-                target="_blank"
-                ><img
-                  class="social_icon"
-                  src="svg/social-youtube.svg"
-                  alt="La chaîne Youtube d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a href="https://github.com/AlanisBedard" target="_blank"
-                ><img
-                  class="social_icon"
-                  src="svg/social-github.svg"
-                  alt="Le GitHub d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a href="https://sketchfab.com/alanisbedard" target="_blank"
-                ><img
-                  class="social_icon"
-                  src="svg/social-sketchfab.svg"
-                  alt="Le Sketchfab d'Alanis Bédard"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

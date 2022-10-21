@@ -54,266 +54,275 @@
       gtag("config", "G-BRXKELD0P6");
     </script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- SWUP librairie : https://swup.js.org/getting-started -->
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+
     <script type="module" src="../js/Main.js" defer></script>
   </head>
 
   <body>
-    <div class="site-container">
-      <header class="header" data-component="Header" data-header="scrollLimit">
-        <div class="wrapper_nav header__style">
-          <a href="../" class="brand"
-            ><img src="../svg/logo.svg" alt="Logo Alanis Bédard"
-          /></a>
+    <div id="swup" data-component="Swup">
+      <div class="site-container">
+        <header
+          class="header"
+          data-component="Header"
+          data-header="scrollLimit"
+        >
+          <div class="wrapper_nav header__style">
+            <a href="/" class="brand"
+              ><img src="../svg/logo.svg" alt="Logo Alanis Bédard"
+            /></a>
 
-          <nav>
-            <ul class="nav_main">
-              <div class="nav__animation">
-                <li><a href="../">Accueil</a></li>
-                <li><a href="">À propos</a></li>
-                <li><a href="../projects">Projets</a></li>
-              </div>
-              <li>
-                <a href="../contact"
-                  ><img src="../svg/letter.svg" alt="Logo de contact"
-                /></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+            <nav>
+              <ul class="nav_main">
+                <div class="nav__animation">
+                  <li><a href="/">Accueil</a></li>
+                  <li><a href="#">À propos</a></li>
+                  <li><a href="/projects/">Projets</a></li>
+                </div>
+                <li>
+                  <a href="/contact/"
+                    ><img src="/svg/letter.svg" alt="Logo de contact"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
 
-      <section class="hero">
-        <div class="wrapper about__hero__content">
-          <div class="about__hero">
-            <img
-              src="../images/about-alanisbedard.png"
-              alt="Photo d'Alanis Bédard"
-              class="about__picture"
-            />
-            <div class="about_alanisbedard">
-              <h1>
-                Alanis Bédard
+        <div class="transition-fade animation__page">
+          <section class="hero">
+            <div class="wrapper about__hero__content">
+              <div class="about__hero">
                 <img
-                  src="../svg/signature.svg"
-                  alt="Signature d'Alanis Bédard"
-                  class="about__signature"
+                  src="../images/about-alanisbedard.png"
+                  alt="Photo d'Alanis Bédard"
+                  class="about__picture"
                 />
-              </h1>
-              <h2>Intégratice multimédia</h2>
-              <p>
-                Passionnée par l'univers des jeux vidéo et de l'art numérique,
-                j'étudie au programme Techniques d'intégration multimédia pour
-                en faire ma carrière. De la programmation web au design, je suis
-                heureuse de prêter main forte! Ma persévérance est ce qui me
-                pousse à relever des défis chaque jour pour offrir le meilleur
-                de mes compétences.
-              </p>
+                <div class="about_alanisbedard">
+                  <h1>
+                    Alanis Bédard
+                    <img
+                      src="../svg/signature.svg"
+                      alt="Signature d'Alanis Bédard"
+                      class="about__signature"
+                    />
+                  </h1>
+                  <h2>Intégratice multimédia</h2>
+                  <p>
+                    Passionnée par l'univers des jeux vidéo et de l'art
+                    numérique, j'étudie au programme Techniques d'intégration
+                    multimédia pour en faire ma carrière. De la programmation
+                    web au design, je suis heureuse de prêter main forte! Ma
+                    persévérance est ce qui me pousse à relever des défis chaque
+                    jour pour offrir le meilleur de mes compétences.
+                  </p>
+                </div>
+              </div>
+              <span class="line"></span>
             </div>
-          </div>
-          <span class="line"></span>
+          </section>
+
+          <section class="knowledge">
+            <div class="wrapper knowledge__content">
+              <div class="skills">
+                <h3>Compétences</h3>
+                <ul class="list_dot">
+                  <li>Animation 2D et 3D</li>
+                  <li>Modélisation</li>
+                  <li>Design</li>
+                  <li>Illustrations</li>
+                  <li>Web</li>
+                </ul>
+              </div>
+              <div class="softwares">
+                <h3>Logiciels</h3>
+                <ul>
+                  <li>
+                    <a href="https://www.blender.org/" target="_blank"
+                      ><img
+                        src="../svg/software-blender.svg"
+                        alt="Logo du logiciel Blender"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.figma.com/fr/" target="_blank"
+                      ><img
+                        src="../svg/software-figma.svg"
+                        alt="Logo du logiciel Figma"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://procreate.art/" target="_blank"
+                      ><img
+                        src="../svg/software-procreate.svg"
+                        alt="Logo du logiciel Procreate"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://code.visualstudio.com/" target="_blank"
+                      ><img
+                        src="../svg/software-vscode.svg"
+                        alt="Logo du logiciel Visual Studio Code"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.adobe.com/ca_fr/" target="_blank"
+                      ><img
+                        src="../svg/software-adobecreative.svg"
+                        alt="Logo de la Suite Adobe"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="languages">
+                <h3>Langages informatiques</h3>
+                <ul class="list_dot">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
+      </div>
+
+      <div class="about__display"></div>
+      <section class="about_medias">
+        <p class="about_qualites">
+          Persévérance Créativité Minutie Patience Persévérance Créativité
+          Minutie Patience Persévérance Créativité Minutie Patience Persévérance
+          Créativité Minutie Patience Persévérance Créativité Minutie Patience
+        </p>
       </section>
 
-      <section class="knowledge">
-        <div class="wrapper knowledge__content">
-          <div class="skills">
-            <h3>Compétences</h3>
-            <ul class="list_dot">
-              <li>Animation 2D et 3D</li>
-              <li>Modélisation</li>
-              <li>Design</li>
-              <li>Illustrations</li>
-              <li>Web</li>
-            </ul>
-          </div>
-          <div class="softwares">
-            <h3>Logiciels</h3>
-            <ul>
-              <li>
-                <a href="https://www.blender.org/" target="_blank"
-                  ><img
-                    src="../svg/software-blender.svg"
-                    alt="Logo du logiciel Blender"
-                /></a>
-              </li>
-              <li>
-                <a href="https://www.figma.com/fr/" target="_blank"
-                  ><img
-                    src="../svg/software-figma.svg"
-                    alt="Logo du logiciel Figma"
-                /></a>
-              </li>
-              <li>
-                <a href="https://procreate.art/" target="_blank"
-                  ><img
-                    src="../svg/software-procreate.svg"
-                    alt="Logo du logiciel Procreate"
-                /></a>
-              </li>
-              <li>
-                <a href="https://code.visualstudio.com/" target="_blank"
-                  ><img
-                    src="../svg/software-vscode.svg"
-                    alt="Logo du logiciel Visual Studio Code"
-                /></a>
-              </li>
-              <li>
-                <a href="https://www.adobe.com/ca_fr/" target="_blank"
-                  ><img
-                    src="../svg/software-adobecreative.svg"
-                    alt="Logo de la Suite Adobe"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <div class="languages">
-            <h3>Langages informatiques</h3>
-            <ul class="list_dot">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="about__display"></div>
-    <section class="about_medias">
-      <p class="about_qualites">
-        Persévérance Créativité Minutie Patience Persévérance Créativité Minutie
-        Patience Persévérance Créativité Minutie Patience Persévérance
-        Créativité Minutie Patience Persévérance Créativité Minutie Patience
-      </p>
-    </section>
+      <div class="site-container">
+        <div class="transition-fade">
+          <section class="achievements">
+            <div class="wrapper achievements__content">
+              <div class="scholarship">
+                <h3>Bourses</h3>
+                <ul>
+                  <li>
+                    Bourse d’excellence pour la meilleure cote R en Techniques
+                    d’intégration multimédia<span>2022</span>
+                  </li>
+                  <li>
+                    Prix ArcelorMittal Produits longs Canada 2e cycle (Défi
+                    génie inventif ÉTS) <span>2019</span>
+                  </li>
+                  <li>
+                    Bourse de la Fondation Jean-Louis Tassé (Mathématiques)
+                    <span>2017</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="objectif">
+                <h3>Objectif</h3>
+                <p>
+                  Obtenir de nouvelles compétences et expériences en entreprise
+                  dans l’univers multimédia.
+                </p>
+              </div>
+            </div>
+          </section>
 
-    <div class="site-container">
-      <section class="achievements">
-        <div class="wrapper achievements__content">
-          <div class="scholarship">
-            <h3>Bourses</h3>
-            <ul>
-              <li>
-                Bourse d’excellence pour la meilleure cote R en Techniques
-                d’intégration multimédia<span>2022</span>
-              </li>
-              <li>
-                Prix ArcelorMittal Produits longs Canada 2e cycle (Défi génie
-                inventif ÉTS) <span>2019</span>
-              </li>
-              <li>
-                Bourse de la Fondation Jean-Louis Tassé (Mathématiques)
-                <span>2017</span>
-              </li>
-            </ul>
-          </div>
-          <div class="objectif">
-            <h3>Objectif</h3>
-            <p>
-              Obtenir de nouvelles compétences et expériences en entreprise dans
-              l’univers multimédia.
-            </p>
-          </div>
-        </div>
-      </section>
+          <section class="references">
+            <div class="wrapper references__content">
+              <div class="buttons">
+                <a href="../pdf/alanisbedard_cv.pdf" class="button" download
+                  >Télécharger mon CV</a
+                >
+                <a
+                  href="../pdf/alanisbedard_recommandation.pdf"
+                  class="button"
+                  download
+                  >Télécharger ma lettre de recommandation</a
+                >
+              </div>
+              <span class="line"></span>
+            </div>
+          </section>
 
-      <section class="references">
-        <div class="wrapper references__content">
-          <div class="buttons">
-            <a href="../pdf/alanisbedard_cv.pdf" class="button" download
-              >Télécharger mon CV</a
-            >
-            <a
-              href="../pdf/alanisbedard_recommandation.pdf"
-              class="button"
-              download
-              >Télécharger ma lettre de recommandation</a
-            >
-          </div>
-          <span class="line"></span>
-        </div>
-      </section>
+          <section class="presentation">
+            <div class="wrapper">
+              <h3>Vidéo de présentation</h3>
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/doe-TSPP8bg?vq=hd1080&rel=0&color=white"
+                width="100%"
+                height="500px"
+                title="Présentation d'Alanis Bédard"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
 
-      <section class="presentation">
-        <div class="wrapper">
-          <h3>Vidéo de présentation</h3>
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/doe-TSPP8bg?vq=hd1080&rel=0&color=white"
-            width="100%"
-            height="500px"
-            title="Présentation d'Alanis Bédard"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          <footer>
+            <div class="wrapper footer__style">
+              <span class="line"></span>
+              <ul class="socials">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/alanisbedard/"
+                    target="_blank"
+                    ><img
+                      class="social_icon"
+                      src="../svg/social-linkedin.svg"
+                      alt="Le LinkedIn d'Alanis Bédard"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.behance.net/alanisbedard" target="_blank"
+                    ><img
+                      class="social_icon"
+                      src="../svg/social-behance.svg"
+                      alt="Le Behance d'Alanis Bédard"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/alanisbedard/?hl=fr"
+                    target="_blank"
+                    ><img
+                      class="social_icon"
+                      src="../svg/social-instagram.svg"
+                      alt="L'Instagram d'Alanis Bédard"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCUNT473RGfLn5Gyyt1mYWJA"
+                    target="_blank"
+                    ><img
+                      class="social_icon"
+                      src="../svg/social-youtube.svg"
+                      alt="La chaîne Youtube d'Alanis Bédard"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/AlanisBedard" target="_blank"
+                    ><img
+                      class="social_icon"
+                      src="../svg/social-github.svg"
+                      alt="Le GitHub d'Alanis Bédard"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://sketchfab.com/alanisbedard" target="_blank"
+                    ><img
+                      class="social_icon"
+                      src="../svg/social-sketchfab.svg"
+                      alt="Le Sketchfab d'Alanis Bédard"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </footer>
         </div>
-      </section>
-
-      <footer>
-        <div class="wrapper footer__style">
-          <span class="line"></span>
-          <ul class="socials">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/alanisbedard/"
-                target="_blank"
-                ><img
-                  class="social_icon"
-                  src="../svg/social-linkedin.svg"
-                  alt="Le LinkedIn d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/alanisbedard" target="_blank"
-                ><img
-                  class="social_icon"
-                  src="../svg/social-behance.svg"
-                  alt="Le Behance d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/alanisbedard/?hl=fr"
-                target="_blank"
-                ><img
-                  class="social_icon"
-                  src="../svg/social-instagram.svg"
-                  alt="L'Instagram d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCUNT473RGfLn5Gyyt1mYWJA"
-                target="_blank"
-                ><img
-                  class="social_icon"
-                  src="../svg/social-youtube.svg"
-                  alt="La chaîne Youtube d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a href="https://github.com/AlanisBedard" target="_blank"
-                ><img
-                  class="social_icon"
-                  src="../svg/social-github.svg"
-                  alt="Le GitHub d'Alanis Bédard"
-              /></a>
-            </li>
-            <li>
-              <a href="https://sketchfab.com/alanisbedard" target="_blank"
-                ><img
-                  class="social_icon"
-                  src="../svg/social-sketchfab.svg"
-                  alt="Le Sketchfab d'Alanis Bédard"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      </div>
     </div>
   </body>
 </html>

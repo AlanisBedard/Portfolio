@@ -48,6 +48,7 @@ body {
   background-color: var(--neutal-primary);
   font-family: "Barlow Condensed", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 html,
@@ -187,7 +188,7 @@ button:hover {
   transform: translate(80%, 800%) rotate(90deg);
 }
 
-[class="is-scrolling-up"] .header .nav__animation {
+.is-scrolling-up:not(.header-is-hidden) .header .nav__animation {
   transform: rotate(0);
 }
 
@@ -998,6 +999,7 @@ footer .line {
 /*** Code trouvé sur W3schools : https://www.w3schools.com/howto/howto_css_disable_text_selection.asp ***/
 
 .swiper-button-prev {
+  transition: 0.2s;
   left: 20px !important;
 }
 
@@ -1008,6 +1010,7 @@ footer .line {
 }
 
 .swiper-button-next {
+  transition: 0.2s;
   right: 20px !important;
 }
 
@@ -1015,6 +1018,11 @@ footer .line {
   .swiper-button-next {
     right: 10px !important;
   }
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  scale: 1.2;
 }
 
 .navigation-buttons::after {
@@ -1300,7 +1308,6 @@ footer .line {
 
 /*--------------------------------------------- Section Animations --------------------------------------------*/
 .animation__projects {
-  animation: transitionProjects 0.7s;
   animation: transitionProjects 0.7s ease;
 }
 
@@ -1360,19 +1367,39 @@ footer .line {
 }
 
 .animation__page {
-  animation: transitionPage 1.5s;
+  animation: transitionPage 0.8s;
 }
 
-@keyframes transitionFade {
+@keyframes transitionPage {
   from {
+    transition: 0.7s;
     opacity: 0;
-    transform: scale(1.2);
-  }
-  20% {
-    transform: scale(1.3);
+    transform: translateX(-100%) rotate3d(1, 0, 0.5, 5deg);
+    transform-origin: bottom center;
   }
   to {
+    transition: 0.8s;
     opacity: 1;
-    transform: scale(1);
+    transform: translateX(0) rotate3d(0, 0, 0, 0deg);
   }
+}
+
+.transition-fade {
+  transition: 0.8s;
+  opacity: 1;
+  transform: translateX(0) rotate(0deg);
+}
+
+html.is-animating .transition-fade {
+  transition: 0.7s;
+  opacity: 0;
+  transform: translateX(-100%) perspective(80px) rotate3d(1, 0, 0.5, 5deg);
+  transform-origin: bottom center;
+}
+
+html.is-leaving .transition-fade {
+  transition: 0.6s;
+  opacity: 0;
+  transform: translateX(100%) perspective(100px) rotate3d(1, 0, 0.5, 5deg);
+  transform-origin: bottom center;
 }

@@ -1,6 +1,7 @@
 import Carousel from "./Carousel.js";
 import Header from "./Header.js";
 import Links from "./Links.js";
+import Animations from "./Animations.js";
 
 class Main {
   constructor() {
@@ -8,6 +9,7 @@ class Main {
       Carousel,
       Header,
       Links,
+      Animations,
     };
 
     this.init();
@@ -26,6 +28,8 @@ class Main {
         new Header(element);
       } else if (componentName == "Links") {
         new Links(element);
+      } else if (componentName == "Swup") {
+        new Animations(element);
       }
     }
   }

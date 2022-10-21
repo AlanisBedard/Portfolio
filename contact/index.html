@@ -54,11 +54,9 @@
       gtag("config", "G-BRXKELD0P6");
     </script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- SWUP librairie : https://swup.js.org/getting-started -->
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+
     <script type="module" src="../js/Main.js" defer></script>
   </head>
 
@@ -66,19 +64,19 @@
     <div class="site-container">
       <header class="header" data-component="Header" data-header="scrollLimit">
         <div class="wrapper_nav header__style">
-          <a href="../" class="brand"
+          <a href="/" class="brand"
             ><img src="../svg/logo.svg" alt="Logo Alanis Bédard"
           /></a>
 
           <nav>
             <ul class="nav_main">
               <div class="nav__animation">
-                <li><a href="../">Accueil</a></li>
-                <li><a href="../about/">À propos</a></li>
-                <li><a href="../projects/">Projets</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/about/">À propos</a></li>
+                <li><a href="/projects/">Projets</a></li>
               </div>
               <li>
-                <a href=""
+                <a href="#"
                   ><img src="../svg/letter.svg" alt="Logo de contact"
                 /></a>
               </li>
@@ -87,7 +85,7 @@
         </div>
       </header>
 
-      <section class="hero">
+      <section class="hero animation__page">
         <div class="wrapper contact__content">
           <div class="contact_infos">
             <h1>Contact</h1>
