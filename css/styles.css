@@ -11,7 +11,8 @@ html {
   box-sizing: inherit;
 }
 
-img {
+img,
+picture {
   max-width: 100%;
 }
 
@@ -572,6 +573,7 @@ footer .line {
 
 .about_alanisbedard {
   margin-left: 100px;
+  flex: 0 60%;
 }
 
 @media screen and (max-width: 1220px) {
@@ -677,7 +679,7 @@ footer .line {
 
 /*--- Section Médias ---*/
 .about__display {
-  background-image: url(../images/about-projects.png);
+  background-image: url(../images/about-projects.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -1076,6 +1078,10 @@ footer .line {
   left: 0;
 }
 
+.hero__bgi picture {
+  height: inherit;
+}
+
 .hero__bgi img {
   position: relative;
   width: 100%;
@@ -1164,7 +1170,7 @@ footer .line {
   margin: 50px 0 70px 0;
 }
 
-.gallery img:first-child {
+.gallery picture:first-child {
   width: 100%;
   grid-column: span 3;
   justify-self: center;
@@ -1182,7 +1188,7 @@ footer .line {
     margin: 50px 0 70px 0;
   }
 
-  .gallery img:first-child {
+  .gallery picture:first-child {
     width: 100%;
     grid-column: 1;
     justify-self: center;
@@ -1228,23 +1234,23 @@ footer .line {
 }
 
 .display__project1 {
-  background-image: url(../images/projet1-display.jpg);
+  background-image: url(../images/projet1-display.webp);
 }
 
 .display__project2 {
-  background-image: url(../images/projet2-display.jpg);
+  background-image: url(../images/projet2-display.webp);
 }
 
 .display__project3 {
-  background-image: url(../images/projet3-display.jpg);
+  background-image: url(../images/projet3-display.webp);
 }
 
 .display__project4 {
-  background-image: url(../images/projet4-display.jpg);
+  background-image: url(../images/projet4-display.webp);
 }
 
 .display__project5 {
-  background-image: url(../images/projet5-display.jpg);
+  background-image: url(../images/projet5-display.webp);
 }
 
 .project__skills {
