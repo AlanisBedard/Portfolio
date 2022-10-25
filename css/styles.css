@@ -303,7 +303,7 @@ footer .social_icon {
 @media screen and (max-width: 1700px) {
   .site-container,
   .site-container-index {
-    padding: 0 70px;
+    padding: 0 80px;
   }
 }
 
@@ -1259,6 +1259,10 @@ footer .line {
   background-image: url(../images/projet5-display.webp);
 }
 
+.display__project6 {
+  background-image: url(../images/projet6-display.webp);
+}
+
 .project__skills {
   margin: 70px 0;
 }
@@ -1268,8 +1272,7 @@ footer .line {
   grid-template-columns: 1.3fr 0.7fr;
   grid-gap: 30px;
 }
-
-.skills_medias img {
+iframe .skills_medias img {
   align-self: center;
 }
 
@@ -1314,8 +1317,14 @@ footer .line {
   transition: all 300ms;
 }
 
-.credits a:hover {
+.credits a:hover,
+.project__description a:hover {
   color: var(--complementary-secondary);
+}
+
+.figma_embed {
+  border: 1px solid rgba(0, 0, 0, 0);
+  margin-top: 70px;
 }
 
 /*--------------------------------------------- Section Animations --------------------------------------------*/
