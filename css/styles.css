@@ -186,7 +186,7 @@ button:hover {
 
 .is-scrolling-down .header .nav__animation,
 .is-scrolling-up .header .nav__animation {
-  transform: translate(80%, 800%) rotate(90deg);
+  transform: translate(78%, 800%) rotate(90deg);
 }
 
 .is-scrolling-up:not(.header-is-hidden) .header .nav__animation {
@@ -1119,6 +1119,8 @@ footer .line {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+  text-align: center;
+  line-height: 1;
 }
 /*** Code trouvé sur W3schools : https://www.w3schools.com/howto/howto_css_disable_text_selection.asp ***/
 
@@ -1133,12 +1135,16 @@ footer .line {
   transition: all 300ms;
 }
 
+.button__back a {
+  color: rgba(237, 242, 239, 0);
+}
+
 .button__back a::before {
   content: "";
   display: block;
   width: 2px;
   height: 25px;
-  transform: rotate(45deg);
+  transform: translateY(50%) rotate(45deg);
 
   background-color: var(--content-primary);
 }
@@ -1148,7 +1154,7 @@ footer .line {
   display: block;
   width: 2px;
   height: 25px;
-  transform: translateY(-100%) rotate(-45deg);
+  transform: translateY(-125%) rotate(-45deg);
 
   background-color: var(--content-primary);
 }
